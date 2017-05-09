@@ -14,10 +14,11 @@ CONFIG = config.CONFIG
 
 class TmuCli(cli_base.Application):
 
-    """Command line application for interacting with InstaCli."""
+    """Command line application for interacting with TmuCli."""
 
     commands = [
-        (cli_commands.User, "commands"),
+        (cli_commands.Tenant, "commands"),
+        (cli_commands.TestTenant, "commands")
     ]
 
     def setup(self):
